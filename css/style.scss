@@ -1,4 +1,4 @@
-@import 'basement';
+﻿@import 'basement';
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, let, video {
   margin: 0;
@@ -24,6 +24,8 @@ body {
   position: relative;
   //background: #222239;
   background: #1c1d26;
+  right:0;
+  transition:right .15s;
   overflow-x:hidden;
 }
 
@@ -51,9 +53,10 @@ img{
 }
 
 .logo,
-.hoverLight,
-.mainNav .social i,
-.mainNav .menu span,
+.navItem a,
+.navItem::before,
+.globalNav .social i,
+.menuToggle span,
 .hoverLight
 {
   -webkit-transition: all .2s ease;

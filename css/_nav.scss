@@ -1,11 +1,152 @@
-.mainNav{
-  padding:50px 0;
-  margin:0;
+#nav{
+  display:none;
+  position:fixed;
+  background: rgba(28, 29, 38, 0);
+  width:100%;
+  height:100%;
+  right:0;
+  top:0;
+  transition:background .15s;
+  z-index:9999;
+
+  .sidebar{
+    position: absolute;
+    background: #1c1d26 linear-gradient(135deg,#1c1d26,#222239 75%);
+    background:linear-gradient(135deg,#1c1d26, transparent), #222239 url('../img/maskDotted.png');
+    background-size:auto, 100px;
+    height: 100vh;
+    width: 560px;
+    margin: 0;
+    top: 0;
+    right: -600px;
+    transition: right .15s;
+  }
+  .navList{
+    padding:0;
+    margin:0;
+    list-style:none;
+
+    a{
+      position: relative;
+      color:#fff;
+      left: 0;
+      text-decoration: none;
+    }
+    li{
+      padding:0 0 0 70px;
+      float: left;
+      clear:both;
+    }
+  }
+  .navItem{
+    display: block;
+    position: relative;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 58px;
+    letter-spacing: .75px;
+
+    &::before{
+      content:'';
+      display:block;
+      position:absolute;
+      background: #62dcff;
+      height:10px;
+      width:0;
+      left:0;
+      bottom:12px;
+    }
+    &:hover{
+      a{
+        left: 12px;
+      }
+      &::before{
+        width:100%;
+      }
+    }
+    &:nth-child(even){
+      &::before{
+        background:#ec4f7e;
+      }
+    }
+  }
+  .navSocial{
+    margin:15px 0 0;
+
+    a{
+      opacity:.4;
+      font-size:21px;
+      margin:0 15px 0 0;
+
+      &:hover{
+        opacity:1;
+        color:#62dcff;
+        transition:none;
+      }
+      &:nth-child(even){
+        &:hover{
+          color:#ec4f7e;
+        }
+      }
+    }
+  }
+  .menuToggle{
+    display: block;
+    position: relative;
+    background:#ec4f7e;
+    line-height: 70px;
+    font-size:36px;
+    color: #fff;
+    width:70px;
+    height:70px;
+    top:0;
+    left:0;
+    transition:.15s;
+    text-align: center;
+
+    &::before{
+      content:'';
+      display: block;
+      position:absolute;
+      border: 1px solid #ec4f7e;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      transition:.15s;
+    }
+
+    &:hover{
+      top:10px;
+      left:10px;
+      &::before{
+        top:-10px;
+        left:-10px;
+      }
+    }
+  }
+}
+.navOpened{
+  right: 560px;
+  overflow-y: hidden;
+  #nav{
+    background: rgba(28, 29, 38, 0.65);
+    overflow: hidden scroll;
+
+    .sidebar{
+      right: 0;
+    }
+  }
+}
+
+.globalNav{
+  padding:60px 0;
+  margin:0 0 45px;
 
   .logo{
 
   }
-  .menu{
+  .menuToggle{
     display:inline-block;
     height:29px;
     width:36px;
@@ -59,7 +200,7 @@
       }
     }
   }
-  .mobile{
+  .phone{
     display: inline-block;
     position: relative;
     padding: 0 0 0 32px;
