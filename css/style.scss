@@ -1,0 +1,74 @@
+﻿@import 'basement';
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, let, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor:default;
+  vertical-align: baseline;
+}
+*, a, div, p {
+  font-family: 'FSElliotPro';
+}
+a, a *{
+  cursor:pointer!important;
+}
+a {
+  color: $blue;
+}
+a:hover {
+  color: lighten($blue, 10%);
+}
+
+body {
+  position: relative;
+  background: #222239;
+  overflow-x:hidden;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 1480px;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+.hoverLight{
+  &:hover{
+    opacity:.75;
+  }
+}
+.card{
+  border:none;
+}
+img{
+  user-select: none;
+  pointer-events: none;
+}
+
+.logo,
+.hoverLight,
+.mainNav .social i,
+.mainNav .menu span{
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+@import 'nav', 'header', 'middle', 'footer', 'modal';
+
+
+.template1{
+  &::before{
+    content:'';
+    position:absolute;
+    background: linear-gradient(159deg,#63047c 42%,#de3e58 64%,#ffca3a),linear-gradient(#1e2652,#1e2652);
+    background: linear-gradient(45deg,#63047c 6%,#de3e58 65%,#ffca3a),linear-gradient(#1e2652,#1e2652);
+    height:728px;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:0;
+  }
+}
