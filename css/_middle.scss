@@ -2,7 +2,7 @@
   position: relative;
   padding:320px 0 240px;
   min-height:768px;
-  background:#1c1d26 url('../img/circles.png')  no-repeat -100% -480px;
+  background: url('../img/circles.png')  no-repeat -100% -480px;
 
   .caption{
     z-index:1;
@@ -134,5 +134,109 @@
   img{
     max-width: 100%;
     margin: -50px 0 10px;
+  }
+}
+
+@keyframes cardShow{
+  0%{
+    opacity:0;
+    top:-25px;
+  }
+  100%{
+    opacity:1;
+    top:0;
+  }
+}
+.categories{
+  position: relative;
+  margin-top: -72px;
+  top: 128px;
+
+  .card{
+    position: relative;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    background-size: auto;
+    padding: 25px;
+    opacity:0;
+    top:-25px;
+    min-height:240px;
+    animation:cardShow .8s forwards;
+    text-decoration: none;
+    transform: scale(1);
+    transform-origin: center;
+    transition-duration: .15s;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover{
+      transform: scale(1.075);
+      box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.1);
+      z-index:1;
+    }
+    &:active{
+      transform: scale(1);
+      -webkit-filter: brightness(.5);
+      filter: brightness(.5);
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+  .col-6>.card{
+    min-height:320px;
+  }
+  @for $i from 0 through 2 {
+    [class*="col"]:nth-child(#{$i + 1}) > .card {
+      animation-delay: .3s + $i*.5
+    };
+  }
+  /*[class*="col"]:nth-child(1) > .card { animation-delay: .3s };
+  [class*="col"]:nth-child(2) > .card { animation-delay: .8s };
+  [class*="col"]:nth-child(3) > .card { animation-delay: 1.3s };*/
+
+  h3{
+    font-weight:bold;
+    font-size:25px;
+    max-width:280px;
+    color:#fff;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    small{
+      display:block;
+      font-size:14px;
+      margin:0 0 5px;
+    }
+  }
+  .nvidia{
+    background:#c1dfc4 url('../img/nvidia.png') no-repeat 0 150px;
+    background-size: auto;
+  }
+  .intel{
+    background: #accbee url('../img/intel.png') no-repeat -15% -50%;
+
+  }
+  .comboIntelNvidia{
+    //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    //background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background: url('../img/intelNvidia.png') no-repeat 200% -20%, linear-gradient(135deg, #1c1d26, #222239);
+    background-size: 85%, auto;
+  }
+
+  .amd{
+    background: #222239 url('../img/amd.png') no-repeat 15% 135px;
+  }
+  .radeon{
+    background:#FFA99F url('../img/radeon.png') no-repeat 85px 100px;
+    background-size: 100%, auto;
+    //background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    //background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+    //background:desaturate(#FF719A, 50%);
+  }
+  .comboRadeonAmd{
+    background: url('../img/radeonAmd.png') no-repeat -200px 45%, linear-gradient(45deg, #FFE29F 0%, #FFA99F, #FF719A);
+  }
+  .ggg{
+    background-image: linear-gradient(225deg, #FFE29F 0%, #FFA99F, #FF719A);
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+    background:desaturate(#FF719A, 50%);
   }
 }
