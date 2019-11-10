@@ -1,8 +1,15 @@
-.middle{
+#features{
+  background:$dark2;
+  padding:128px 0;
+  min-height:1200px;
+}
+
+#builds{
   position: relative;
   padding:320px 0 240px;
-  min-height:768px;
-  background: url('../img/circles.png')  no-repeat -100% -480px;
+  min-height:960px;
+  background: $dark1 url('../img/circles.png') no-repeat -100% -480px;
+          //$dark2 linear-gradient(to bottom, $dark1, $dark2 65%);
 
   .caption{
     z-index:1;

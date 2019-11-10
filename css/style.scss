@@ -14,16 +14,16 @@ a, a *{
   cursor:pointer!important;
 }
 a {
-  color: $blue;
-}
-a:hover {
-  color: lighten($blue, 10%);
+  &, &:hover{
+    color: #fff;
+  }
 }
 
 body {
   position: relative;
   //background: #222239;
   background: #1c1d26;
+  color: #fff;
   right:0;
   transition:right .15s;
   overflow-x:hidden;
