@@ -54,21 +54,25 @@
 }
 
 // VARIABLES
-$light: #f6f9fc;
-$lightText: #919bba;
-$lightBorder: #e1e6ef;
+$dark1: #1c1d26;
+$dark2: #222239;
 
-$blue: #6977fa;
-$blueLighten: lighten($blue, 5%);
-$blueDarken: darken(desaturate($blue, 25%),5%);
+//$light: #f6f9fc;
+//$lightText: #919bba;
+//$lightBorder: #e1e6ef;
 
-$red: #fa6969;
-$redLighten: lighten($red, 5%);
-$redDarken: darken(desaturate($red, 25%),5%);
+$pink: #ec4f7e;
+$blue: #61dcff;
+//$blueLighten: lighten($blue, 5%);
+//$blueDarken: darken(desaturate($blue, 25%),5%);
 
-$night: darken(desaturate($blue, 25%), 50%);
-$nightLighten: lighten($night, 5%);
-$nightDarken: darken($night, 5%);
+//$red: #fa6969;
+//$redLighten: lighten($red, 5%);
+//$redDarken: darken(desaturate($red, 25%),5%);
+
+//$night: darken(desaturate($blue, 25%), 50%);
+//$nightLighten: lighten($night, 5%);
+//$nightDarken: darken($night, 5%);
 
 @mixin FontAwesome(){
   font-family: 'Font Awesome 5 Pro';

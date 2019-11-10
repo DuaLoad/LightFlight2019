@@ -92,13 +92,13 @@
       top: -50px;
     }
     &::after{
-      background: linear-gradient(to left,transparent,#ec4f7e);
+      background: linear-gradient(to left,transparent,$pink);
       right: -35%;
       bottom: -50px;
     }
   }
   h3{
-    color:#ec4f7e;
+    color:$pink;
     font-weight:bold;
     text-transform: uppercase;
 
