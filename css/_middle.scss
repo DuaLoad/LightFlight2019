@@ -50,7 +50,7 @@
   .card{
     position:relative;
     border-radius:15px;
-    background:#222239;
+    background:$dark2;
     max-width:360px;
     min-height:180px;
     padding:25px;
@@ -58,7 +58,7 @@
     top:0;
     box-shadow:
             0 15px 35px 0 rgba(0,0,0,0.3),
-            inset 0 0 0 9px #222239,
+            inset 0 0 0 9px $dark2,
             inset 0 0 0 10px rgba(98, 219, 254, 0.1);
     text-decoration:none;
     text-align:center;
@@ -73,7 +73,7 @@
       top:-20px;
       box-shadow:
               0 35px 45px 0 rgba(0,0,0,0.4),
-              inset 0 0 0 9px #222239,
+              inset 0 0 0 9px $dark2,
               inset 0 0 0 10px rgba(98, 219, 254, 0.1);
       &::before{
         width:135%;
@@ -222,12 +222,12 @@
   .comboIntelNvidia{
     //background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
     //background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    background: url('../img/intelNvidia.png') no-repeat 200% -20%, linear-gradient(135deg, #1c1d26, #222239);
+    background: url('../img/intelNvidia.png') no-repeat 200% -20%, linear-gradient(135deg, $dark1, $dark2);
     background-size: 85%, auto;
   }
 
   .amd{
-    background: #222239 url('../img/amd.png') no-repeat 15% 135px;
+    background: $dark2 url('../img/amd.png') no-repeat 15% 135px;
   }
   .radeon{
     background:#FFA99F url('../img/radeon.png') no-repeat 85px 100px;
