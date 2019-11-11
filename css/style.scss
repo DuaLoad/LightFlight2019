@@ -52,14 +52,14 @@ body {
     content:'\f061';
     display: inline-block;
     @include FontAwesome;
-    margin:0 0 0 3px;
+    margin:0 0 0 5px;
     font-size: 80%;
   }
   &:hover{
     opacity:.7;
     text-decoration: none;
     &::after{
-      margin:0 0 0 8px;
+      margin:0 0 0 10px;
     }
   }
 }
