@@ -139,6 +139,15 @@
   }
 }
 
+@keyframes menuToggleShift {
+  0%, 25%, 75%, 100%{
+    background: #fff;
+  }
+  25%, 50%{
+    background: $blue;
+  }
+}
+
 .globalNav{
   padding:60px 0;
   margin:0 0 45px;
@@ -148,6 +157,37 @@
   }
   .menuToggle{
     display:inline-block;
+    height:29px;
+    width:36px;
+    font-size: 0;
+    line-height: 0;
+    text-align: right;
+
+    span{
+      display: inline-block;
+      background: #fff;
+      border-radius:50%;
+      width: 6px;
+      height: 6px;
+      font-size: 0;
+      line-height: 0;
+      margin: 0 0 6px 6px;
+
+      &:nth-child(n+7),
+      &:nth-child(-n+3){
+        background: $blue;
+      }
+    }
+    &:hover{
+      span{
+        background:#fff;
+        animation: menuToggleShift 1s infinite;
+        &:nth-child(odd){
+          animation-delay:.25s;
+        }
+      }
+    }
+    /*display:inline-block;
     height:29px;
     width:36px;
     font-size: 0;
@@ -185,7 +225,7 @@
           width:60%;
         }
       }
-    }
+    }*/
   }
   .social{
     padding:12px;
