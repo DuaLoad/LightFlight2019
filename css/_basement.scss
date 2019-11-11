@@ -75,7 +75,7 @@ $blue: #61dcff;
 //$nightDarken: darken($night, 5%);
 
 @mixin FontAwesome(){
-  font-family: 'Font Awesome 5 Pro';
+  font-family: 'Font Awesome 5 Pro', sans-serif;
 }
 @mixin placeholder {
   &::-webkit-input-placeholder { @content; }
