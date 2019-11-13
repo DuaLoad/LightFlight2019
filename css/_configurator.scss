@@ -1,0 +1,126 @@
+#configurator{
+  min-height:100vh;
+  background:$dark2;
+
+  &>.row{
+    position: relative;
+    height:100%;
+  }
+  .row,
+  [class*="col"]{
+    padding:0;
+    margin:0;
+  }
+  .headline{
+    //background: #222239 linear-gradient(135deg,#62dcff,transparent,#ec4f7e) center;
+    //background-size: 400%;
+    height: 96px;
+    padding:15px 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    z-index: 1;
+  }
+  .globalMenu{
+    background:
+            linear-gradient(135deg,$dark2,transparent),
+            $dark1 url('../img/maskDotted.png');
+    padding:0 4px 0 0;
+    overflow: hidden;
+
+    .headline{
+      //background: #222239 linear-gradient(135deg,#62dcff,transparent,#ec4f7e) center;
+      //background-size: 400%;
+      height: 96px;
+      padding:15px 25px;
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
+    @keyframes transfusion{
+      0%{
+        background: $blue;
+      }
+      25%{
+        background: #4444ed;
+      }
+      50%{
+        background: $pink;
+      }
+      75%{
+        background: #4444ed;
+      }
+      100%{
+        background: $blue;
+      }
+    }
+    &::after{
+      content:'';
+      display: block;
+      position: absolute;
+      //background: linear-gradient(180deg,$blue, #4444ed, $pink) center;
+      background:$blue;
+      height:100%;
+      width:4px;
+      top:0;
+      right:0;
+      animation: transfusion 4s infinite;
+      z-index:1;
+    }
+  }
+  .dashboard{
+    overflow: hidden;
+    .headline{
+      //border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+  .content{
+    padding:35px;
+  }
+  .components{
+    list-style:none;
+
+    li{
+
+    }
+    a{
+      position: relative;
+      margin:0 -20px;
+      padding:20px;
+      text-decoration:none;
+
+      &::before{
+        content:'';
+        display: block;
+        position: absolute;
+        background:$blue;
+        height:100%;
+        width:100%;
+        opacity:0;
+        left:0;
+        top:0;
+        transition: .2s;
+        animation: transfusion 4s infinite;
+        z-index:0;
+      }
+      &:hover{
+        &::before{
+          opacity:.2;
+          transition: none;
+        }
+      }
+    }
+    .preview{
+      display: block;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      height:49px;
+      width:49px;
+      margin:0 15px 0 0;
+    }
+    h3{
+      font-size:24px;
+    }
+    p{
+      font-size:14px;
+      opacity:.5;
+    }
+  }
+}
