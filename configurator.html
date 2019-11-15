@@ -156,21 +156,28 @@
                 </div>
                 <div class="col-3 filters pl-5">
                     <h4>Фильтры</h4>
-                    <div class="group">
+                    <div class="group search">
                         <input class="field" placeholder="Поиск по категории...">
                     </div>
                     <div class="group">
-                        <h4>Сокеты</h4>
+                        <h4 class="row">
+                            <a href="#" class="roll hoverLight">
+                                <i class="fal fa-angle-down"></i> Сокеты
+                            </a>
+                            <a href="#" class="clear hoverLight">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </h4>
                         <ul>
                             <li>
                                 <label class="hoverEvent">
-                                    <input type="checkbox" class="field">
+                                    <input type="checkbox" class="field" checked>
                                     AM1
                                 </label>
                             </li>
                             <li>
                                 <label class="hoverEvent">
-                                    <input type="checkbox" class="field">
+                                    <input type="checkbox" class="field" checked>
                                     AM3+
                                 </label>
                             </li>
@@ -196,6 +203,57 @@
                         <div class="toggle">
                             <a href="#" class="hoverEvent">Показать ещё 12</a>
                         </div>
+                    </div>
+                    <div class="group">
+                        <h4 class="row">
+                            <a href="#" class="roll hoverLight">
+                                <i class="fal fa-angle-down"></i> Цена
+                            </a>
+                            <a href="#" class="clear hoverLight">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </h4>
+                        <div class="row">
+                            <input class="col field" placeholder="1 990">
+                            <div class="px-3">—</div>
+                            <input class="col field" placeholder="32 990">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <h4 class="row">
+                            <a href="#" class="roll hoverLight">
+                                <i class="fal fa-angle-down"></i> Количество ядер
+                            </a>
+                            <a href="#" class="clear hoverLight">
+                                <i class="fal fa-times"></i>
+                            </a>
+                        </h4>
+                        <ul>
+                            <li>
+                                <label class="hoverEvent">
+                                    <input type="radio" name="core" class="field" checked>
+                                    4
+                                </label>
+                            </li>
+                            <li>
+                                <label class="hoverEvent">
+                                    <input type="radio" name="core" class="field">
+                                    6
+                                </label>
+                            </li>
+                            <li>
+                                <label class="hoverEvent">
+                                    <input type="radio" name="core" class="field">
+                                    8
+                                </label>
+                            </li>
+                            <li>
+                                <label class="hoverEvent">
+                                    <input type="radio" name="core" class="field">
+                                    12
+                                </label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
