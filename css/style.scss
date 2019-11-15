@@ -1,4 +1,4 @@
-﻿@import 'basement';
+@import 'basement';
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, let, video {
   margin: 0;
@@ -63,6 +63,94 @@ body {
     }
   }
 }
+.paging {
+  margin: 25px 0 0;
+  padding: 0 25px;
+
+  .pagination {
+    position:relative;
+    padding-right: 96px;
+    list-style:none;
+    font-size: 0;
+  }
+  .page-item {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    vertical-align: top;
+
+    &:nth-child(2),
+    &:nth-child(8){
+      display: none;
+    }
+    .page-link {
+      display: block;
+      border-radius: 4px;
+      border: none;
+      background: none;
+      font-size: 24px;
+      line-height: 36px;
+      color: $blue;
+      padding: 0 10px;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      box-shadow:none;
+      outline:none;
+
+      i{
+        display: block;
+        font-size: 14px;
+        line-height: 36px;
+        vertical-align: top;
+      }
+      &:hover{
+        color:#fff!important;
+        transition:none;
+      }
+    }
+
+    &:not(.disabled):not(.active):not(:first-child):not(:last-child):hover{
+      a.page-link{
+        color: #afb2be;
+      }
+    }
+    &.active {
+      .page-link{
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        background: $blue;
+        cursor: none;
+        pointer-events: none;
+      }
+    }
+
+    &:first-child,
+    &:last-child{
+      position:absolute;
+      margin: 0;
+      top:0;
+      right:0;
+
+      .page-link{
+        display: block;
+        background: $blue;
+        line-height: 32px;
+        color: rgba(0, 0, 0, 0.5);
+        height:36px;
+        padding: 0 13px;
+      }
+      &.disabled{
+        .page-link{
+          color: $dark2;
+          background-color: transparentize($blue, .9);
+        }
+      }
+    }
+    &:first-child{
+      right:45px;
+    }
+  }
+}
 .card{
   border: none;
   border-radius: 8px;
@@ -76,6 +164,7 @@ img{
 .logo,
 .navItem a,
 .navItem::before,
+.paging .page-link,
 .globalNav .social i,
 .menuToggle span,
 .linkArrow::after,
