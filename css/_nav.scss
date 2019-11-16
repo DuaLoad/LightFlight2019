@@ -150,8 +150,10 @@
 }
 
 .globalNav{
+  position: relative;
   padding:60px 0;
   margin:0 0 45px;
+  z-index:2;
 
   .logo{
 
