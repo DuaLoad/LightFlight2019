@@ -1,45 +1,97 @@
 #builds{
   position: relative;
   padding:128px 0;
-  background: $dark1;//url('../img/circles.png') no-repeat -100% -480px;
+  background:
+          url('../img/grid.png') center,
+          $dark2 linear-gradient(45deg, $dark1, $dark2);//url('../img/circles.png') no-repeat -100% -480px;
           //$dark2 linear-gradient(to bottom, $dark1, $dark2 65%);
 
   .caption{
     z-index:1;
   }
-  .cell{
-    display: block;
-    //background:#8c95ad;
-    height: 100%;
-    background:$blue;
-    padding:15px 25px;
-    text-decoration:none;
-    &:hover{
-      background:$pink;
-      transition: none;
+  .list{
+    margin:50px 0 0;
+
+    h3{
+      color:$blue;
+      font-size: 28px;
+      font-weight:bold;
+      text-transform: uppercase;
     }
   }
-  .row:nth-child(odd){
-    .cell{
+  .row {
+    &+.row{
+      margin-top:50px;
+    }
+
+    &:nth-child(even){
+      h3{
+        color:$pink;
+      }
+      .cell{
+        background:$pink;
+        &:hover{
+          background:$blue;
+          box-shadow: 0 0 40px -10px $blue;
+          transition: background 0s;
+        }
+      }
+    }
+  }
+  .cell{
+    display: block;
+    position: relative;
+    height: 100%;
+    background: $blue;
+    padding:25px;
+    overflow: hidden;
+    text-align:center;
+    text-decoration:none;
+    box-shadow: 0 0 20px -10px #000;
+
+    &::before{
+      content:'';
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      width:0;
+      height:0;
+      left:50%;
+      bottom:25px;
+      box-shadow: 0 0 8em 4em #000;
+      z-index:0;
+    }
+    &:hover{
       background:$pink;
-      &:hover{
-        background:$blue;
+      box-shadow: 0 0 40px -10px $pink;
+      transition: background 0s;
+
+      img{
+        top:-10px;
       }
     }
   }
   h5{
-    font-weight:bold;
-    color:$dark1;
+    line-height: 1.4;
+    font-weight: bold;
+    color: transparentize($dark1, .35);
+    text-transform: uppercase;
+
+    small{
+      display: block;
+      font-weight:bold;
+      font-size:14px;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: initial;
+    }
   }
   img{
-    display: block;
-    max-width: 75%;
-    margin: 15px auto;
-  }
-  .price{
-    //color:#3d445b;
-    color: rgba(0, 0, 0, 0.7);
-    font-size:18px;
+    display: inline-block;
+    position: relative;
+    margin: 25px auto 0;
+    max-height: 180px;
+    top:0;
+    z-index:1;
   }
   .more{
     height:100%;
@@ -97,7 +149,7 @@
           url('../img/pick1.png') no-repeat 60em -50em,
           linear-gradient(135deg, $dark2, transparent),
           $dark2 url('../img/maskDotted.png');
-  background-size: auto, auto, auto, 100px;
+  background-size: auto auto, auto auto, 100px auto;
   padding:128px 0;
 
   [class*="col"]{
