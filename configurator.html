@@ -29,17 +29,24 @@
     </script>
 </head>
 <body>
-<div id="configurator" class="row m-0">
-    <div class="col-3 globalMenu">
-        <div class="row headline align-items-center">
-            <a href="#" class="logo hoverLight mr-auto">
-                <img src="img/logo1.png" width="94" height="55" alt="logo">
-            </a>
-        </div>
-        <div class="content">
+<div id="configurator">
+    <div class="row headline align-items-center">
+        <a href="#" class="logo hoverLight mr-auto">
+            <img src="img/logo.png" width="220" height="55" alt="logo">
+        </a>
+    </div>
+    <div class="row m-0">
+        <div class="col-3 card globalMenu">
+            <div class="row total align-items-end">
+                <div class="col p-0">
+                    <small>Сборка <a href="#">#234872</a></small>
+                    <h3>Итого</h3>
+                </div>
+                <h3 class="price">114 000 руб.</h3>
+            </div>
             <ul class="components">
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center checked">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Процессор</h3>
@@ -48,25 +55,27 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Материнская плата</h3>
-                            <p>64 модели</p>
+                            <p><b>+1 899 руб.</b></p>
                         </div>
+                        <i class="fas fa-check"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Оперативная память</h3>
-                            <p>51 модель</p>
+                            <p><b>+22 399 руб.</b></p>
                         </div>
+                        <i class="fas fa-check"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Видеокарта</h3>
@@ -75,7 +84,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Накопитель</h3>
@@ -84,7 +93,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Блок питания</h3>
@@ -93,7 +102,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="#" class="row align-items-center">
                         <img src class="preview" alt>
                         <div class="col">
                             <h3>Корпус</h3>
@@ -103,23 +112,105 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="col-9 dashboard">
-        <div class="headline">
-
-        </div>
-        <div class="content">
+        <div class="col-9 dashboard">
             <div class="row">
-                <div class="col-8">
-                    <div class="mb-5">
+                <div class="col-9">
+                    <div class="mb-4">
                         <h3>Процессоры <small>145</small></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem est magnam minus nesciunt. Animi corporis eum, harum natus quae tenetur!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eli doloremque mollitia.</p>
                     </div>
-                    <div class="card topline mb-4">
-                        Lorem ipsum dolor sit amet.
-                    </div>
-                    <div class="card">
-                        <div class="empty">Lorem ipsum dolor sit amet.</div>
+                    <div class="card catalog">
+                        <div class="topline">
+                            <a href="#" class="hoverEvent">i3</a>
+                            <a href="#" class="hoverEvent">i5</a>
+                            <a href="#" class="hoverEvent">i7</a>
+                            <a href="#" class="hoverEvent">i9</a>
+                            <a href="#" class="hoverEvent checked">AMD</a>
+                            <a href="#" class="hoverEvent">RYZEN</a>
+                        </div>
+                        <div class="content">
+                            <div class="row align-items-center">
+                                <img src width="64" height="64" alt>
+                                <div class="col">
+                                    <h4>AMD Athlon X4 840 OEM</h4>
+                                    <span class="tag available"><i class="far fa-check"></i> В наличии</span>
+                                </div>
+                                <span class="price">+1 699 <i class="fal fa-ruble-sign"></i></span>
+                                <a href="#" class="btnOutline primary">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <a href="#" class="btnOutline">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                            <div class="row align-items-center">
+                                <img src width="64" height="64" alt>
+                                <div class="col">
+                                    <h4>Intel Celeron G4900 OEM</h4>
+                                    <span class="tag available"><i class="far fa-check"></i> В наличии</span>
+                                </div>
+                                <span class="price">+3 199 <i class="fal fa-ruble-sign"></i></span>
+                                <a href="#" class="btnOutline primary">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <a href="#" class="btnOutline">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                            <div class="row align-items-center checked">
+                                <img src width="64" height="64" alt>
+                                <div class="col">
+                                    <h4>Intel Core i3-8600F</h4>
+                                    <span class="tag available"><i class="far fa-check"></i> В наличии</span>
+                                </div>
+                                <span class="price">+4 990 <i class="fal fa-ruble-sign"></i></span>
+                                <a href="#" class="btnOutline danger">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                                <a href="#" class="btnOutline">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                                <div class="col-12 pt-4">
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="lol" class="field" checked>
+                                        Intel Core i3-8600F
+                                    </label>
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="lol" class="field">
+                                        Intel Core i3-8600FC
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <img src width="64" height="64" alt>
+                                <div class="col">
+                                    <h4>Intel Core i3-8600F</h4>
+                                    <span class="tag available"><i class="far fa-check"></i> В наличии</span>
+                                    <span class="tag recommended"><i class="far fa-star"></i> Рекомендуем</span>
+                                </div>
+                                <span class="price">+4 990 <i class="fal fa-ruble-sign"></i></span>
+                                <a href="#" class="btnOutline primary">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <a href="#" class="btnOutline">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                            <div class="row align-items-center">
+                                <img src width="64" height="64" alt>
+                                <div class="col">
+                                    <h4>Intel Core i3-8600F</h4>
+                                    <span class="tag unavailable"><i class="fas fa-tags"></i> Под заказ</span>
+                                </div>
+                                <span class="price">+4 990 <i class="fal fa-ruble-sign"></i></span>
+                                <a href="#" class="btnOutline primary">
+                                    <i class="fas fa-plus"></i>
+                                </a>
+                                <a href="#" class="btnOutline">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="paging">
                         <ul class="pagination b-pagination">
@@ -154,106 +245,108 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-3 filters pl-5">
-                    <h4>Фильтры</h4>
-                    <div class="group search">
-                        <input class="field" placeholder="Поиск по категории...">
-                    </div>
-                    <div class="group">
-                        <h4 class="row">
-                            <a href="#" class="roll hoverLight">
-                                <i class="fal fa-angle-down"></i> Сокеты
-                            </a>
-                            <a href="#" class="clear hoverLight">
-                                <i class="fal fa-times"></i>
-                            </a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="checkbox" class="field" checked>
-                                    AM1
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="checkbox" class="field" checked>
-                                    AM3+
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="checkbox" class="field">
-                                    LGA 1151
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="checkbox" class="field">
-                                    LGA 1151-v2
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="checkbox" class="field">
-                                    LGA 2011-3
-                                </label>
-                            </li>
-                        </ul>
-                        <div class="toggle">
-                            <a href="#" class="hoverEvent">Показать ещё 12</a>
+                <div class="col-3">
+                    <div class="card filters">
+                        <h4>Фильтры</h4>
+                        <div class="group search">
+                            <input class="field" placeholder="Поиск по категории...">
                         </div>
-                    </div>
-                    <div class="group">
-                        <h4 class="row">
-                            <a href="#" class="roll hoverLight">
-                                <i class="fal fa-angle-down"></i> Цена
-                            </a>
-                            <a href="#" class="clear hoverLight">
-                                <i class="fal fa-times"></i>
-                            </a>
-                        </h4>
-                        <div class="row">
-                            <input class="col field" placeholder="1 990">
-                            <div class="px-3">—</div>
-                            <input class="col field" placeholder="32 990">
+                        <div class="group">
+                            <h4 class="row">
+                                <a href="#" class="roll hoverLight">
+                                    <i class="fal fa-angle-down"></i> Сокеты
+                                </a>
+                                <a href="#" class="clear hoverLight">
+                                    <i class="fal fa-times"></i>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="checkbox" class="field" checked>
+                                        AM1
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="checkbox" class="field" checked>
+                                        AM3+
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="checkbox" class="field">
+                                        LGA 1151
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="checkbox" class="field">
+                                        LGA 1151-v2
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="checkbox" class="field">
+                                        LGA 2011-3
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="toggle">
+                                <a href="#" class="hoverEvent">Показать ещё 12</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="group">
-                        <h4 class="row">
-                            <a href="#" class="roll hoverLight">
-                                <i class="fal fa-angle-down"></i> Количество ядер
-                            </a>
-                            <a href="#" class="clear hoverLight">
-                                <i class="fal fa-times"></i>
-                            </a>
-                        </h4>
-                        <ul>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="radio" name="core" class="field" checked>
-                                    4
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="radio" name="core" class="field">
-                                    6
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="radio" name="core" class="field">
-                                    8
-                                </label>
-                            </li>
-                            <li>
-                                <label class="hoverEvent">
-                                    <input type="radio" name="core" class="field">
-                                    12
-                                </label>
-                            </li>
-                        </ul>
+                        <div class="group">
+                            <h4 class="row">
+                                <a href="#" class="roll hoverLight">
+                                    <i class="fal fa-angle-down"></i> Цена
+                                </a>
+                                <a href="#" class="clear hoverLight">
+                                    <i class="fal fa-times"></i>
+                                </a>
+                            </h4>
+                            <div class="row">
+                                <input class="col field" placeholder="1 990">
+                                <div class="px-3">—</div>
+                                <input class="col field" placeholder="32 990">
+                            </div>
+                        </div>
+                        <div class="group">
+                            <h4 class="row">
+                                <a href="#" class="roll hoverLight">
+                                    <i class="fal fa-angle-down"></i> Количество ядер
+                                </a>
+                                <a href="#" class="clear hoverLight">
+                                    <i class="fal fa-times"></i>
+                                </a>
+                            </h4>
+                            <ul>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="core" class="field" checked>
+                                        4
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="core" class="field">
+                                        6
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="core" class="field">
+                                        8
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="hoverEvent">
+                                        <input type="radio" name="core" class="field">
+                                        12
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
