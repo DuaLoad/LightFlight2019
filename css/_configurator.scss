@@ -57,8 +57,6 @@
     height:100%;
   }
   .headline{
-    //background: #222239 linear-gradient(135deg,#62dcff,transparent,#ec4f7e) center;
-    //background-size: 400%;
     background:
             linear-gradient(135deg,$dark2,transparent),
             $dark1 url('../img/maskDotted.png');
@@ -66,6 +64,48 @@
     height: 96px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
     z-index: 1;
+
+    .list{
+      margin: 0 0 0 -25px;
+      padding: 25px;
+      white-space: nowrap;
+      background: linear-gradient(135deg,rgba(255,255,255,0.05),transparent);
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        background:none;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background: #323f52;
+      }
+
+      a{
+        display: inline-block;
+        border-radius: 4px;
+        padding: 8px 16px;
+        color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 1px rgba(255,255,255,0.2);
+        text-decoration: none;
+        transition: box-shadow .15s;
+
+        +a{
+          margin-left:10px;
+        }
+        &:not(.checked):hover{
+          color:#fff;
+          box-shadow: 0 0 0 1px rgba(255,255,255,0.3);
+        }
+        &.checked{
+          background:$blue;
+          color:$dark2;
+        }
+      }
+    }
   }
   .globalMenu{
     padding: 0!important;
