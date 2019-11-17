@@ -4,7 +4,7 @@
 
   .btnOutline{
     position: relative;
-    background: #8f8fbc;
+    background: #fff;
     line-height: 42px;
     font-size: 18px;
     color: transparentize($dark1, .2);
@@ -19,7 +19,7 @@
       content: '';
       display: block;
       position: absolute;
-      border: 1px solid #8f8fbc;
+      border: 1px solid #fff;
       width: 100%;
       height: 100%;
       top:0;
@@ -64,7 +64,6 @@
             $dark1 url('../img/maskDotted.png');
     padding:0 35px;
     height: 96px;
-    margin: 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
     z-index: 1;
   }
@@ -120,12 +119,12 @@
     }
   }
   .components{
-    border-top:1px solid rgba(255, 255, 255, 0.1);
+    border-top:1px solid rgba(255, 255, 255, 0.05);
     list-style:none;
 
     a{
       position: relative;
-      border-bottom:1px solid rgba(255, 255, 255, 0.1);
+      border-bottom:1px solid rgba(255, 255, 255, 0.05);
       margin:0;
       padding:25px 35px;
       transition: .2s;
