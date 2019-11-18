@@ -1,33 +1,49 @@
 #builds{
   position: relative;
-  padding:128px 0;
-  background:
-          $dark1 url('../img/grid.png') center;
+  //padding:96px 0;
+  //background: $dark1 url('../img/grid.png') center;
           //$dark2 linear-gradient(45deg, $dark1, $dark2);
           //url('../img/circles.png') no-repeat -100% -480px;
           //$dark2 linear-gradient(to bottom, $dark1, $dark2 65%);
 
-  .caption{
+  &::before{
+    content:'';
+    display: block;
+    position: absolute;
+    background:url('../img/grid.png') center;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
     z-index:1;
   }
-  .list{
-    margin:50px 0 0;
+  .wrapper{
+    position: relative;
+    z-index:2;
+  }
+  /*.list{
 
     h3{
-      color:$blue;
-      font-size: 28px;
-      font-weight:bold;
+      color: transparentize($blue, .8);
+      font-size: 5em;
+      font-weight: 900;
       text-transform: uppercase;
     }
-  }
-  .row {
-    &+.row{
-      margin-top:50px;
-    }
+  }*/
+  .productLine{
+    padding:180px 0 0;
+    background-color: $dark1;
 
     &:nth-child(even){
+      background-color:$dark2;
+
+      h2{
+        mark{
+          color:$pink;
+        }
+      }
       h3{
-        color:$pink;
+        color:transparentize($pink, .8);
       }
       .cell{
         background:$pink;
@@ -37,6 +53,9 @@
           transition: background 0s;
         }
       }
+    }
+    .row{
+      margin:0 0 -52px;
     }
   }
   .cell{
@@ -190,11 +209,55 @@
   }
 }
 #promo{
+  position: relative;
+  color: rgba(220,238,255,0.75);
+  color: rgba(255,220,220,0.75);
   background:
-          url('../img/promo2.png') no-repeat 85% center,
-          url('../img/promo3.jpg') center;
-  background-size:30%, cover;
-  padding:128px 0 512px;
+          linear-gradient(240deg, transparentize($pink, .25) 30%, transparent 30%),
+          #e9f4ff linear-gradient(65deg, transparentize($blue, .5) 30%, transparent 30%);
+  box-shadow:0 -50px 50px 0 rgba(0, 0, 0, 0.1);
+  z-index:1;
+
+  .promo{
+    position: relative;
+    padding:210px 0;
+    &::before{
+      content:'';
+      display: block;
+      position: absolute;
+      background:
+              url('../img/promo5.png') no-repeat center;
+      background-size:90%;
+      width:50%;
+      height:100%;
+      right:0;
+      bottom:0;
+      filter: saturate(1);
+      animation:pcSaturate 4s infinite;
+    }
+  }
+  .caption{
+    h2{
+      color:$dark1;
+    }
+    mark{
+      color:$pink;
+    }
+  }
+  @keyframes pcSaturate{
+    0%, 100%{
+      filter: saturate(1);
+    }
+    25%, 75%{
+      filter: saturate(2);
+    }
+    50%{
+      filter: saturate(0.5);
+    }
+  }
+  .btnFinish{
+    background-color:$dark1;
+  }
 }
 #order{
   padding:0 0 128px;
@@ -416,6 +479,51 @@
   }
 }
 
+.caption{
+  h2{
+    font-weight:900;
+    font-size:5em;
+    color:#fff;
+  }
+  mark{
+    background:none;
+    color:#62dcff;
+  }
+  p{
+    line-height: 1.8;
+    font-size:21px;
+    max-width: 720px;
+    margin: 15px 0 0;
+    color: rgba(220, 238, 255, 0.75);
+
+    +p{
+      margin-top:10px;
+    }
+  }
+}
+.hero{
+  position: relative;
+  background:url('../img/header.jpg') no-repeat center 85%;
+  background-size:cover;
+  padding: 256px 0 0;
+
+  .wrapper{
+    z-index:1;
+  }
+  &::before{
+    content:'';
+    display:block;
+    position: absolute;
+    background: linear-gradient(135deg, $blue, #4444ed, $pink);
+    opacity:0.6;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+  }
+}
+
 @keyframes cardShow{
   0%{
     opacity:0;
@@ -428,8 +536,9 @@
 }
 .categories{
   position: relative;
-  margin-top: -72px;
-  top: 128px;
+  padding:0 0 128px;
+  //margin-top: -72px;
+  //top: 128px;
 
   .card{
     position: relative;
@@ -515,47 +624,5 @@
     background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
     background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
     background:desaturate(#FF719A, 50%);
-  }
-}
-.hero{
-  position: relative;
-  background:url('../img/header.jpg') no-repeat center 85%;
-  background-size:cover;
-  padding: 256px 0 0;
-
-  .wrapper{
-    z-index:1;
-  }
-  &::before{
-    content:'';
-    display:block;
-    position: absolute;
-    background: linear-gradient(135deg, $blue, #4444ed, $pink);
-    opacity:0.6;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:0;
-  }
-}
-.caption{
-  h2{
-    font-weight:900;
-    font-size:5em;
-    color:#fff;
-  }
-  mark{
-    background:none;
-    color:#62dcff;
-  }
-  p{
-    max-width: 720px;
-    font-size:21px;
-    color: rgba(220, 238, 255, 0.75);
-
-    +p{
-      margin-top:10px;
-    }
   }
 }

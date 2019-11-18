@@ -3,54 +3,9 @@
   background: $dark2;
 
   .btnOutline{
-    position: relative;
-    background: #fff;
-    line-height: 42px;
-    font-size: 18px;
-    color: transparentize($dark1, .2);
     width: 42px;
     height: 42px;
-    top:0;
-    left:0;
-    transition: .15s;
-    text-align: center;
-
-    &::before{
-      content: '';
-      display: block;
-      position: absolute;
-      border: 1px solid #fff;
-      width: 100%;
-      height: 100%;
-      top:0;
-      left:0;
-      transition: .15s;
-    }
-    &.danger{
-      color:#fff;
-      background: $pink;
-      &::before{
-        border-color:$pink;
-      }
-    }
-    &.primary{
-      background: $blue;
-      &::before{
-        border-color:$blue;
-      }
-    }
-    &:hover{
-      top:10px;
-      left:10px;
-      &::before{
-        top:-10px;
-        left:-10px;
-      }
-    }
-
-    &+.btnOutline{
-      margin-left:12px;
-    }
+    padding:0;
   }
   &>.row{
     position: relative;

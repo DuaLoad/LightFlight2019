@@ -1,3 +1,59 @@
 #footer{
-  min-height:360px;
+  position: relative;
+  padding:128px 0 0;
+  z-index:1;
+
+  &::before{
+    content:'';
+    display: block;
+    position: absolute;
+    background: url('../img/footer.png') no-repeat center;
+    background-size: contain;
+    width: 900px;
+    height: 709px;
+    left: 60%;
+    top: -75px;
+  }
+  .contacts{
+    margin:75px -15px;
+
+    h3{
+      font-weight:bold;
+      font-size:28px;
+    }
+    p{
+      color:rgba(220, 238, 255, 0.75);
+      font-size:16px;
+      margin:10px 0;
+    }
+    a{
+      color:$blue;
+    }
+  }
+  .lower{
+    border-top:1px solid rgba(220,238,255,0.1);
+    color: rgba(220,238,255,0.5);
+    padding:32px 0;
+    margin:0;
+
+    [class*="col"]{
+      padding:0;
+    }
+    [class*="fa"]{
+      font-size:24px;
+    }
+    a{
+      color:inherit;
+
+      &:hover{
+        color:#fff;
+        transition: none;
+        text-decoration: none;
+      }
+      &:not(:first-child){
+        margin-left:15px;
+      }
+    }
+
+  }
 }

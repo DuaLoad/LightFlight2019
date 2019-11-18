@@ -89,6 +89,67 @@ body {
     text-decoration: none;
   }
 }
+.btnOutline{
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  line-height: 42px;
+  font-size: 18px;
+  color: transparentize($dark1, .2)!important;
+  padding: 5px 25px;
+  font-weight: bold;
+  top:0;
+  left:0;
+  transition: .15s;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    transition: .15s;
+  }
+  &.danger{
+    color:#fff;
+    background: $pink;
+    &::before{
+      border-color:$pink;
+    }
+  }
+  &.primary{
+    background: $blue;
+    &::before{
+      border-color:$blue;
+    }
+  }
+  &:hover{
+    top:10px;
+    left:10px;
+    text-decoration: none;
+    &::before{
+      top:-10px;
+      left:-10px;
+    }
+  }
+
+  &.large{
+    padding:15px 25px;
+    font-size:24px;
+
+    &::before{
+      border-width:2px;
+    }
+  }
+  &+.btnOutline{
+    margin-left:12px;
+  }
+}
 .paging {
   margin: 25px 0 0;
   padding: 0 25px;
@@ -204,7 +265,8 @@ img{
 .cell,
 .cell img,
 .field::before,
-.field::after
+.field::after,
+.thumbnail .preview
 {
   -webkit-transition: all .2s ease;
   transition: all .2s ease;

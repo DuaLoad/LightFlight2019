@@ -128,18 +128,14 @@
         </div>
     </header>
     <div id="builds" class="middle">
-        <div class="wrapper">
-            <div class="caption">
-                <h2><mark>Готовые</mark> сборки</h2>
-                <p>Приветствуем, дорогой гость! Нашими сборками мы хотим показать, что мощный компьютер не обязательно должен быть дорогим, вот что мы готовы предложить в сравнении с другими магазинами:</p>
-            </div>
-            <div class="list">
+        <div class="productLine">
+            <div class="wrapper">
                 <div class="row">
-                    <div class="col-12 caption mb-4">
-                        <h3>Бюджетные сборки</h3>
+                    <div class="col-12 caption mb-3">
+                        <h2><mark>Бюджетные</mark> сборки</h2>
                     </div>
                     <div class="col-2">
-                        <a href="#" class="cell">
+                        <a href="#" class="cell" data-toggle="modal" data-target="#purchaseWindow">
                             <h5>
                                 Newbie 1
                                 <small>39 990 руб.</small>
@@ -173,8 +169,8 @@
                     </div>-->
                 </div>
                 <div class="row">
-                    <div class="col-12 caption mb-4">
-                        <h3>Усиленные сборки</h3>
+                    <div class="col-12 caption mb-3">
+                        <h2><mark>Усиленные</mark> сборки</h2>
                     </div>
                     <div class="col-2">
                         <a href="#" class="cell">
@@ -230,8 +226,8 @@
                     </div>-->
                 </div>
                 <div class="row">
-                    <div class="col-12 caption mb-4">
-                        <h3>Экстремальные сборки</h3>
+                    <div class="col-12 caption mb-3">
+                        <h2><mark>Экстремальные</mark> сборки</h2>
                     </div>
                     <div class="col-2">
                         <a href="#" class="cell">
@@ -339,73 +335,75 @@
         </div>
     </div>
     <div id="promo">
-        <div class="wrapper">
-            <div class="caption">
-                <h2>Наши <mark>преимущества</mark></h2>
-                <p>Приветствуем, дорогой гость! Нашими сборками мы хотим показать, что мощный компьютер не обязательно должен быть дорогим, вот что мы готовы предложить в сравнении с другими магазинами:</p>
-            </div>
-        </div>
-    </div>
-    <div id="category" class="hero">
-        <div class="wrapper">
-            <div class="caption pb-5">
-                <h2><mark>Наши</mark> категории</h2>
-                <p>Создавая наши сборки, мы опирались на самое-самое главное — это соотношение цены\производительности.</p>
-            </div>
-            <div class="row categories">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <a href="#" class="card comboIntelNvidia">
-                                <h3>
-                                    <small>17 вариантов</small>
-                                    Сборки на основе INTEL + NVIDIA
-                                </h3>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="card intel">
-                                <h3>
-                                    <small>32 вариантов</small>
-                                    Сборки на основе процессоров INTEL
-                                </h3>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="card nvidia">
-                                <h3>
-                                    <small>55 вариантов</small>
-                                    Сборки на базе видеокарт NVIDIA
-                                </h3>
-                            </a>
-                        </div>
+        <div class="promo">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-6 caption">
+                        <h2 class="mb-5"><mark>1 шаг</mark> до компьютера твоей <mark>мечты</mark></h2>
+                        <a href="#" class="btnOutline large danger">
+                            Перейти в конфигуратор <i class="far fa-arrow-right ml-3"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="#" class="card radeon">
-                                <h3>
-                                    <small>23 варианта</small>
-                                    Сборки на базе видеокарт RADEON
-                                </h3>
-                            </a>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <a href="#" class="card comboIntelNvidia">
+                                    <h3>
+                                        <small>17 вариантов</small>
+                                        Сборки на основе INTEL + NVIDIA
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card intel">
+                                    <h3>
+                                        <small>32 вариантов</small>
+                                        Сборки на основе процессоров INTEL
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card nvidia">
+                                    <h3>
+                                        <small>55 вариантов</small>
+                                        Сборки на базе видеокарт NVIDIA
+                                    </h3>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <a href="#" class="card amd">
-                                <h3>
-                                    <small>11 вариантов</small>
-                                    Сборки на основе процессоров AMD
-                                </h3>
-                            </a>
-                        </div>
-                        <div class="col-12 mt-4">
-                            <a href="#" class="card comboRadeonAmd">
-                                <h3>
-                                    <small>44 варианта</small>
-                                    Сборки на основе RADEON + AMD
-                                </h3>
-                            </a>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="card radeon">
+                                    <h3>
+                                        <small>23 варианта</small>
+                                        Сборки на базе видеокарт RADEON
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card amd">
+                                    <h3>
+                                        <small>11 вариантов</small>
+                                        Сборки на основе процессоров AMD
+                                    </h3>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <a href="#" class="card comboRadeonAmd">
+                                    <h3>
+                                        <small>44 варианта</small>
+                                        Сборки на основе RADEON + AMD
+                                    </h3>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -413,8 +411,210 @@
         </div>
     </div>
     <footer id="footer">
-
+        <div class="wrapper">
+            <div class="caption">
+                <h2><mark>Наши</mark> контакты</h2>
+                <p>Есть деловое предложение или идея для сотрудничества? Либо, быть может, Вы хотите оставить свой отзыв? У нас ни одно обращение не останется без ответа — пишите, давайте обсудим!</p>
+                <!--<p>Есть деловое предложение или идея для сотрудничества? Либо, быть может, хотите оставить свой отзыв?  нас ни одно обращение не остаётся без ответа — напишите нам, и мы всё обязательно обсудим! =)</p>-->
+            </div>
+            <div class="row contacts">
+                <div class="col-4">
+                    <h3>Деловые предложения</h3>
+                    <p>Есть предложение по сотрудничеству или Вы решили создать сборку на основе личных предпочтений?</p>
+                    <a href="#">Связаться через группы ВКонтакте</a>
+                </div>
+                <div class="col-4">
+                    <h3>Техническая поддержка</h3>
+                    <p>Столкнулись с проблемой на сайте, у Вас есть вопросы или нужна помощь? Свяжитесь с нами, мы Вам поможем!</p>
+                    <a href="#">+7 (812) 565-00-69</a>
+                </div>
+            </div>
+            <div class="row lower">
+                <div class="col">© Copyright 2019 LightFlight. Все права защищены.</div>
+                <a href="#" class="hoverLight">
+                    <img src="img/logo1.png" width="80" height="46" alt>
+                </a>
+                <div class="col text-right">
+                    <a href="https://vk.com/lightflightpc" class="hoverLight" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCdaHBdj5V-JddQpB51wjGsw" class="hoverLight" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="hoverLight" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lightflightpc/" class="hoverLight" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
+</div>
+<div class="modal fade bd-example-modal-xl" id="purchaseWindow" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="row">
+                <div class="row col-5 flex-column m-0 pr-4">
+                    <div class="col preview">
+                        <img src="img/buildsNewbie2.png" alt>
+                    </div>
+                    <div class="thumbnail mt-3">
+                        <div class="preview">
+                            <img src="img/buildsNewbie3.png" alt>
+                        </div>
+                        <div class="preview">
+                            <img src="img/buildsStandart2.png" alt>
+                        </div>
+                        <div class="preview">
+                            <img src="img/buildsStandart3.png" alt>
+                        </div>
+                        <div class="preview checked">
+                            <img src="img/buildsNewbie2.png" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fal fa-times"></i>
+                    </button>
+                    <h1>
+                        <small>Экстремальные сборки</small>
+                        Newbie Extreme
+                    </h1>
+                    <h2>58 990 руб.</h2>
+                    <ul class="row about">
+                        <li class="col-6">Компактный, стильный и невероятно производительный компьютер</li>
+                        <li class="col-6">Бескомпромиссное решение в семействе компактных компьютеров</li>
+                        <li class="col-6">Переосмысление внутренней архитектуры</li>
+                        <li class="col-6">Оптимизизация охлаждения и компонентов</li>
+                        <li class="col-6">Поддерживает технологию адаптивной синхронизации NVIDIA G-Sync</li>
+                        <li class="col-6">Бесперебойная потоковая трансляция и превосходные развлечения</li>
+                    </ul>
+                    <a href="#" class="btnOutline danger">
+                        Изменить сборку
+                        <i class="far fa-edit"></i>
+                    </a>
+                    <a href="#" class="btnOutline primary">
+                        Оформить заказ
+                        <i class="far fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="details mt-5">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Описание</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Характеристики</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Доставка</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-3">
+                                <h4>Охлаждение</h4>
+                                <p>AirCooling 90</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Блок питания</h4>
+                                <p>500W 80+ Gold Full Modular</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Процессор</h4>
+                                <p>Intel® Core™ i3-9100F</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Оперативная память</h4>
+                                <p>16GB DDR4-2666 RGB</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>SSD накопитель</h4>
+                                <p>240GB SSD SATA</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Материнская плата</h4>
+                                <p>Intel® B360 Chipset Mini-ITX</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Видеокарта</h4>
+                                <p>NVIDIA GeForce RTX 2060</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+                            <div class="col-3">
+                                <h4>Видеокарта</h4>
+                                <p>NVIDIA GeForce RTX 2060</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Процессор</h4>
+                                <p>Intel® Core™ i3-9100F</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Материнская плата</h4>
+                                <p>Intel® B360 Chipset Mini-ITX</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Охлаждение</h4>
+                                <p>AirCooling 90</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Оперативная память</h4>
+                                <p>16GB DDR4-2666 RGB</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>SSD накопитель</h4>
+                                <p>240GB SSD SATA</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Блок питания</h4>
+                                <p>500W 80+ Gold Full Modular</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">
+                            <div class="col-3">
+                                <h4>Оперативная память</h4>
+                                <p>16GB DDR4-2666 RGB</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>SSD накопитель</h4>
+                                <p>240GB SSD SATA</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Материнская плата</h4>
+                                <p>Intel® B360 Chipset Mini-ITX</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Видеокарта</h4>
+                                <p>NVIDIA GeForce RTX 2060</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Охлаждение</h4>
+                                <p>AirCooling 90</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Блок питания</h4>
+                                <p>500W 80+ Gold Full Modular</p>
+                            </div>
+                            <div class="col-3">
+                                <h4>Процессор</h4>
+                                <p>Intel® Core™ i3-9100F</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/app.js"></script>
 </body>
