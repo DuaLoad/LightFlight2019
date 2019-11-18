@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <!-- Standard Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Site Properities -->
+    <title>LightFlight</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+          integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--<link rel="icon" type="image/png" href="favicon.ico" />-->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+    </script>
+</head>
+<body>
+<div id="app">
+    <nav id="nav">
+        <div class="row sidebar flex-column">
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="menuToggle">
+                        <i class="fal fa-times"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="my-auto">
+                <ul class="navList">
+                    <li class="navItem">
+                        <a href="#app">К началу</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#features">Преимущества</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#builds">Готовые сборки</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#category">Категории</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#footer">Контакты</a>
+                    </li>
+                    <li class="navSocial">
+                        <a href="https://vk.com/lightflightpc" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCdaHBdj5V-JddQpB51wjGsw" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lightflightpc/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="order" class="hero">
+        <div class="wrapper">
+            <div class="row globalNav align-items-center">
+                <a href="#" class="logo hoverLight mr-5">
+                    <img src="img/logo.png" width="220" height="55" alt="logo">
+                </a>
+                <a href="https://vk.com/lightflightpc" class="social" target="_blank">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCdaHBdj5V-JddQpB51wjGsw" class="social" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://twitter.com/" class="social" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/lightflightpc/" class="social" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="phone hoverLight ml-auto mr-3">
+                    <i class="fal fa-mobile-android"></i>
+                    +7 (812) 565-00-69
+                    <span>Обратная связь</span>
+                </a>
+                <a href="#" class="menuToggle ml-5">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <div class="caption pb-5">
+                <h2><mark>Оформление</mark> заказа</h2>
+                <div class="row mt-5">
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="surname">Фамилия</label>
+                                <input id="surname" class="form-control form-control-lg" placeholder="Иванов">
+                            </div>
+                            <div class="col-4">
+                                <label for="name">Имя</label>
+                                <input id="name" class="form-control form-control-lg" placeholder="Иван">
+                            </div>
+                            <div class="col-4">
+                                <label for="patronymic">Отчество</label>
+                                <input id="patronymic" class="form-control form-control-lg" placeholder="Иванович">
+                            </div>
+                            <div class="col-8 my-5">
+                                <label for="address">Адрес доставки</label>
+                                <input id="address" class="form-control form-control-lg" placeholder="123456 Россия, г. Москва, ул. Пушкина, д. 1 кв. 20">
+                            </div>
+                            <div class="col-4 my-5">
+                                <label for="voucher">Промокод</label>
+                                <input id="voucher" class="form-control form-control-lg" placeholder="LightFlight">
+                            </div>
+                            <div class="col-6">
+                                <label for="email">Электронная почта</label>
+                                <input id="email" class="form-control form-control-lg" placeholder="yourname@example.ru">
+                            </div>
+                            <div class="col-6">
+                                <label for="phone">Номер телефона</label>
+                                <input id="phone" class="form-control form-control-lg" placeholder="+7 (898) 974-65-89">
+                            </div>
+                            <div class="col-12 mt-5">
+                                <label>Вид оплаты</label>
+                                <div class="form-control form-control-lg type checked">Наличными</div>
+                                <div class="form-control form-control-lg type">По карте</div>
+                                <div class="form-control form-control-lg type">Бесконтактная</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <label>Ваша корзина</label>
+                        <div class="row cart">
+                            <div class="col-2">
+                                <div class="form-control form-control-lg type">
+                                    <small>Сборка #89238</small>
+                                    <a href="#">Изменить</a>
+                                    <a href="#">Удалить</a>
+                                    <h5>107 990 Руб.</h5>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-control form-control-lg type checked">
+                                    <small>Сборка #36456</small>
+                                    <a href="#">Изменить</a>
+                                    <a href="#">Удалить</a>
+                                    <h5>72 139 Руб.</h5>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-control form-control-lg type checked">
+                                    <small>Сборка #67231</small>
+                                    <a href="#">Изменить</a>
+                                    <a href="#">Удалить</a>
+                                    <h5>37 990 Руб.</h5>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="form-control form-control-lg type">
+                                    <small>Сборка #19374</small>
+                                    <a href="#">Изменить</a>
+                                    <a href="#">Удалить</a>
+                                    <h5>89 090 Руб.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="finish">
+                    <div class="row mx-0">
+                        <h3 class="price">
+                            <label>Итоговая стоимость</label>
+                            123 000 руб.
+                        </h3>
+                        <h4 class="ml-5">
+                            <label>Старая цена</label>
+                            167 000 руб.
+                        </h4>
+                        <h4 class="ml-5">
+                            <label>Промокод</label>
+                            LightFlight
+                        </h4>
+                        <h4 class="ml-5">
+                            <label>Скидка</label>
+                            20%
+                        </h4>
+                        <div class="col-12 mt-5 p-0">
+                            <a href="#" class="btnFinish">Продолжить оформление заказа</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

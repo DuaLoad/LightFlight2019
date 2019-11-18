@@ -63,6 +63,32 @@ body {
     }
   }
 }
+.btnFinish{
+  position: relative;
+  display: inline-block;
+  background: rgba(0,0,0,0.6);
+  border-radius: 6px;
+  line-height: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  top:0;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.4);
+
+  &::after{
+    content:'\f061';
+    @include FontAwesome;
+    margin:0 0 0 15px;
+    color:$pink;
+    text-shadow:0 0 10px $pink;
+  }
+  &:hover{
+    top:-10px;
+    box-shadow:0 10px 15px -5px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+  }
+}
 .paging {
   margin: 25px 0 0;
   padding: 0 25px;
@@ -172,6 +198,9 @@ img{
 .hoverLight,
 .teaser,
 .teaser::before,
+#order .form-control,
+.btnFinish::after,
+.btnFinish,
 .cell,
 .cell img,
 .field::before,

@@ -196,6 +196,119 @@
   background-size:30%, cover;
   padding:128px 0 512px;
 }
+#order{
+  padding:0 0 128px;
+  min-height:100vh;
+
+  label{
+    display: block;
+    color: rgba(220,238,255,0.75);
+    font-weight:bold;
+    font-size:14px;
+    margin:0 0 5px;
+    text-transform: uppercase;
+  }
+  .form-control{
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.8);
+    border:none;
+    outline:none;
+    box-shadow:none;
+
+    @include placeholder{
+      color: rgba(255, 255, 255, 0.5);
+    }
+    &:hover{
+      background: rgba(0, 0, 0, 0.3);
+    }
+    &:not(.type):focus{
+      background: rgba(0, 0, 0, 0.6);
+    }
+    &.type{
+      display: inline-block;
+      position: relative;
+      margin-right:5px;
+      cursor:pointer;
+      width:unset;
+      &.checked{
+        background: rgba(0, 0, 0, 0.6);
+        &::before{
+          content:'';
+          display: inline-block;
+          border-radius:50%;
+          background:$pink;
+          height:8px;
+          width:8px;
+          margin:0 10px 0 0;
+          box-shadow:0 0 10px 2px $pink;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .cart{
+    margin:0 -5px;
+
+    [class*="col"]{
+      padding:0 5px;
+    }
+    .type{
+      display: block;
+      padding:15px;
+
+      &.checked{
+        &::before{
+          display: none;
+        }
+        &::after{
+          content:'\f00c';
+          position: absolute;
+          @include FontAwesome();
+          font-size: 21px;
+          color:$pink;
+          right: 15px;
+          bottom: 9px;
+          text-shadow:0 0 10px $pink;
+          box-shadow:none;
+        }
+      }
+    }
+    small{
+      display: block;
+      color: rgba(220,238,255,0.75);
+      font-size:inherit;
+      margin:0 0 -8px;
+    }
+    a{
+      font-size: 14px;
+      color:$blue;
+    }
+    h5{
+      font-weight:bold;
+      font-size:18px;
+      color:$blue;
+      margin:20px 0 0;
+    }
+  }
+  .finish{
+    border-top:1px solid rgba(255, 255, 255, 0.1);
+    margin:50px 0 0;
+    padding:50px 0 0;
+
+    .price{
+      border-bottom: 2px dotted;
+      font-weight: bold;
+      font-size: 4em;
+      line-height: 1;
+      color:$blue;
+    }
+    h4{
+      color: $blue;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
 .configure{
   &::before{
     content:'';
