@@ -626,6 +626,7 @@ img {
 
 #builds {
   position: relative;
+  padding: 128px 0;
   /*.list{
 
     h3{
@@ -649,28 +650,36 @@ img {
     position: relative;
     z-index: 2; }
   #builds .productLine {
-    padding: 180px 0 0;
-    background-color: #1c1d26; }
-    #builds .productLine:nth-child(even) {
-      background-color: #222239; }
-      #builds .productLine:nth-child(even) h2 mark {
-        color: #ec4f7e; }
-      #builds .productLine:nth-child(even) h3 {
-        color: rgba(236, 79, 126, 0.2); }
-      #builds .productLine:nth-child(even) .cell {
-        background: #ec4f7e; }
-        #builds .productLine:nth-child(even) .cell:hover {
-          background: #61dcff;
-          box-shadow: 0 0 40px -10px #61dcff;
-          transition: background 0s; }
-    #builds .productLine .row {
-      margin: 0 0 -52px; }
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px 30px 45px;
+    margin: 0 -10px; }
+    #builds .productLine + .row {
+      margin-top: 128px; }
+    #builds .productLine [class*="col"] {
+      padding: 0 10px; }
+    #builds .productLine .caption {
+      margin: -80px 0 35px; }
+    #builds .productLine:nth-child(even) h2 mark {
+      color: #ec4f7e; }
+    #builds .productLine:nth-child(even) .more {
+      color: #ec4f7e; }
+      #builds .productLine:nth-child(even) .more:hover {
+        background: rgba(236, 79, 126, 0.05); }
+    #builds .productLine:nth-child(even) h3 {
+      color: rgba(236, 79, 126, 0.2); }
+    #builds .productLine:nth-child(even) .cell {
+      background: #ec4f7e; }
+      #builds .productLine:nth-child(even) .cell:hover {
+        background: #61dcff;
+        box-shadow: 0 0 40px -10px #61dcff;
+        transition: background 0s; }
   #builds .cell {
     display: block;
     position: relative;
     height: 100%;
     background: #61dcff;
-    padding: 25px;
+    padding: 25px 15px 15px;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
@@ -693,26 +702,30 @@ img {
       #builds .cell:hover img {
         top: -10px; }
   #builds h5 {
-    line-height: 1.4;
     font-weight: bold;
-    color: rgba(28, 29, 38, 0.65);
+    font-size: 21px;
+    color: #1c1d26;
+    line-height: 1.4;
     text-transform: uppercase; }
     #builds h5 small {
       display: block;
       font-weight: bold;
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.8);
+      opacity: .6;
       text-transform: initial; }
   #builds img {
     display: inline-block;
     position: relative;
-    margin: 25px auto 0;
-    max-height: 180px;
+    margin: 15px auto 0;
+    max-height: 190px;
+    max-width: 100%;
     top: 0;
     z-index: 1; }
   #builds .more {
     height: 100%;
-    padding: 15px;
+    margin: 0;
+    color: #61dcff;
+    transition: .2s;
     text-align: center;
     text-decoration: none; }
     #builds .more::before {
@@ -720,12 +733,12 @@ img {
       display: block;
       position: absolute;
       border-radius: 50%;
-      background: #61dcff;
       height: 0;
       width: 0;
       top: 50%;
       left: 50%;
-      transition: .2s;
+      color: inherit;
+      box-shadow: 0 0 75px 25px;
       z-index: 0; }
     #builds .more * {
       position: relative;
@@ -734,20 +747,15 @@ img {
     #builds .more i[class*="fa"] {
       display: block;
       font-size: 54px;
-      color: #61dcff;
+      color: inherit;
       margin: 0 0 15px; }
     #builds .more p {
       color: rgba(220, 238, 255, 0.75); }
-    #builds .more:hover::before {
-      border-radius: 0;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-    #builds .more:hover i[class*="fa"] {
-      color: #000; }
-    #builds .more:hover p {
-      color: #fff; }
+    #builds .more:hover {
+      background: rgba(97, 220, 255, 0.05);
+      transition: none; }
+      #builds .more:hover p {
+        color: #fff; }
 
 #features {
   background: url("../img/pick1.png") no-repeat 60em -50em, linear-gradient(135deg, #222239, transparent), #222239 url("../img/maskDotted.png");
@@ -844,7 +852,8 @@ img {
       position: relative;
       margin-right: 5px;
       cursor: pointer;
-      width: unset; }
+      width: unset;
+      height: unset; }
       #order .form-control.type.checked {
         background: rgba(0, 0, 0, 0.6); }
         #order .form-control.type.checked::before {
@@ -854,7 +863,7 @@ img {
           background: #ec4f7e;
           height: 8px;
           width: 8px;
-          margin: 0 10px 0 0;
+          margin: -2px 10px 0 0;
           box-shadow: 0 0 10px 2px #ec4f7e;
           vertical-align: middle; }
   #order .cart {
@@ -1069,20 +1078,20 @@ img {
       font-size: 14px;
       margin: 0 0 5px; }
   .categories .nvidia {
-    background: #c1dfc4 url("../img/nvidia.png") no-repeat 0 150px;
+    background: #45eda7 url("../img/nvidia.png") no-repeat 0 150px;
     background-size: auto; }
   .categories .intel {
-    background: #accbee url("../img/intel.png") no-repeat -15% -50%; }
+    background: #4444ed url("../img/intel.png") no-repeat -15% -50%; }
   .categories .comboIntelNvidia {
-    background: url("../img/intelNvidia.png") no-repeat 200% -20%, linear-gradient(135deg, #1c1d26, #222239);
+    background: #222239 url("../img/intelNvidia.png") no-repeat 200% -20%;
     background-size: 85%, auto; }
   .categories .amd {
-    background: #222239 url("../img/amd.png") no-repeat 15% 135px; }
+    background: #1c1d26 url("../img/amd.png") no-repeat 15% 135px; }
   .categories .radeon {
-    background: #FFA99F url("../img/radeon.png") no-repeat 85px 100px;
+    background: #ec4f7e url("../img/radeon.png") no-repeat 85px 100px;
     background-size: 100%, auto; }
   .categories .comboRadeonAmd {
-    background: url("../img/radeonAmd.png") no-repeat -200px 45%, linear-gradient(45deg, #FFE29F 0%, #FFA99F, #FF719A); }
+    background: #1c1d26 url("../img/radeonAmd.png") no-repeat -200px 45%; }
   .categories .ggg {
     background-image: linear-gradient(225deg, #FFE29F 0%, #FFA99F, #FF719A);
     background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
@@ -1108,7 +1117,7 @@ img {
     margin: 75px -15px; }
     #footer .contacts h3 {
       font-weight: bold;
-      font-size: 28px; }
+      font-size: 24px; }
     #footer .contacts p {
       color: rgba(220, 238, 255, 0.75);
       font-size: 16px;
