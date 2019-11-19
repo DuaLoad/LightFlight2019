@@ -274,16 +274,126 @@ img{
 @import 'nav', 'header', 'middle', 'footer', 'modal', 'configurator';
 
 
-.template1{
-  &::before{
-    content:'';
-    position:absolute;
-    background: linear-gradient(159deg,#63047c 42%,#de3e58 64%,#ffca3a),linear-gradient(#1e2652,#1e2652);
-    background: linear-gradient(45deg,#63047c 6%,#de3e58 65%,#ffca3a),linear-gradient(#1e2652,#1e2652);
-    height:728px;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:0;
+@media (max-width: 1400px) {
+  .caption h2 {
+    font-size: 4em;
+  }
+}
+@media (max-width: 1200px) {
+  .caption h2 {
+    font-size: 3em;
+  }
+  #builds .productLine .caption{
+    margin-top:-60px;
+  }
+  #footer {
+    padding: 278px 0 0;
+    margin: -150px 0 0;
+    &::before{
+      left:70%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  #header{
+    padding-bottom:50px;
+    .anchor,
+    .teaser{
+      width: 100%;
+      height: 61%;
+
+      &.right{
+        height:39%;
+        top: unset;
+        bottom:0;
+      }
+    }
+    .caption{
+      .right{
+        margin-top:128px;
+      }
+    }
+  }
+  #features{
+    [class*="col"]{
+
+      &:nth-child(even){
+        background: none;
+      }
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(7),
+      &:nth-child(10),
+      &:nth-child(11){
+        background: rgba(255, 255, 255, 0.05)!important;
+      }
+    }
+  }
+  #promo{
+    .promo{
+      padding:128px 0;
+      &::before{
+        background-position:bottom left;
+        background-size: 768px;
+      }
+    }
+    .btnOutline{
+      white-space: nowrap;
+    }
+  }
+  #footer{
+    &::before{
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+  .caption{
+    h2{
+      font-size: 2em;
+    }
+    p{
+      font-size:18px;
+    }
+  }
+  .wrapper{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  #builds{
+    .productLine {
+      padding: 15px;
+      .caption{
+        margin-top:0;
+      }
+    }
+  }
+  #features{
+    text-align: center;
+    .row p {
+      margin: 15px 0 0;
+      font-size: 14px;
+    }
+    [class*="col"]{
+      background: none!important;
+      &:nth-child(odd){
+        background: rgba(255, 255, 255, 0.05)!important;
+      }
+    }
+  }
+  #promo{
+    .btnOutline{
+      padding: 5px 15px;
+      font-size: 18px;
+    }
+  }
+  #footer{
+    .lower{
+      text-align: center;
+    }
   }
 }
