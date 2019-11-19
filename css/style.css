@@ -1681,6 +1681,15 @@ img {
     padding-right: 15px;
     padding-left: 15px; }
 
+  .navOpened {
+    right: 0; }
+
+  #nav .sidebar {
+    width: 100vw;
+    right: -100vw; }
+  #nav .navList li {
+    padding: 0 0 0 35px; }
+
   #builds .productLine {
     padding: 15px; }
     #builds .productLine .caption {
