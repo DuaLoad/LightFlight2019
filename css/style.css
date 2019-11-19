@@ -869,7 +869,7 @@ img {
   #order .cart {
     margin: 0 -5px; }
     #order .cart [class*="col"] {
-      padding: 0 5px; }
+      padding: 0 5px 15px; }
     #order .cart .type {
       display: block;
       padding: 15px; }
@@ -1666,7 +1666,11 @@ img {
     white-space: nowrap; }
 
   #footer::before {
-    display: none; } }
+    display: none; }
+
+  #order .finish .price {
+    width: 100%;
+    border: none; } }
 @media (max-width: 576px) {
   .caption h2 {
     font-size: 2em; }
@@ -1697,6 +1701,11 @@ img {
     font-size: 18px; }
 
   #footer .lower {
-    text-align: center; } }
+    text-align: center; }
+
+  #order .finish .price {
+    font-size: 3em; }
+  #order .finish h4 {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

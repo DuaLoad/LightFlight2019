@@ -347,6 +347,14 @@ img{
       display: none;
     }
   }
+  #order{
+    .finish{
+      .price{
+        width: 100%;
+        border:none;
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
 
@@ -394,6 +402,16 @@ img{
   #footer{
     .lower{
       text-align: center;
+    }
+  }
+  #order{
+    .finish{
+      .price{
+        font-size:3em;
+      }
+      h4{
+        width:100%;
+      }
     }
   }
 }
