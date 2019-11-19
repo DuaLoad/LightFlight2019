@@ -1102,7 +1102,8 @@ img {
 #footer {
   position: relative;
   padding: 128px 0 0;
-  z-index: 1; }
+  margin: -75px 0 0;
+  overflow: hidden; }
   #footer::before {
     content: '';
     display: block;
@@ -1112,7 +1113,8 @@ img {
     width: 900px;
     height: 709px;
     left: 60%;
-    top: -75px; }
+    top: 0;
+    z-index: 2; }
   #footer .contacts {
     margin: 75px -15px; }
     #footer .contacts h3 {
