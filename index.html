@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="ru-RU" class="modal-open">
 <head>
     <!-- Standard Meta -->
     <meta charset="UTF-8">
@@ -476,7 +476,7 @@
         </div>
     </footer>
 </div>
-<div class="modal fade bd-example-modal-xl" id="purchaseWindow" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade bd-example-modal-xl show" id="purchaseWindow"  style="padding-right: 17px; display: block;" tabindex="-1" role="dialog" aria-hidden="false">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <div class="modal-content">
             <div class="row">
@@ -524,6 +524,236 @@
                         Оформить заказ
                         <i class="far fa-shopping-cart"></i>
                     </a>
+                </div>
+            </div>
+            <div class="performance">
+                <h2>Средний FPS в играх</h2>
+                <p class="status text-warning mt-2">Настройки графики: Ультра</p>
+                <ul class="nav nav-tabs mt-4" id="performance" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab1" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="false">1920x1080</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="profile-tab1" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="true">НА РАЗРЕШЕНИИ 2К</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab1" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact" aria-selected="false">4К ГЕЙМИНГ</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="performance-content">
+                    <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab1">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/dota.jpg" alt>
+                                    <h4>DOTA 2</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/fortnite.jpg" alt>
+                                    <h4>Fortnite</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/csgo.jpg" alt>
+                                    <h4>CS GO</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">228 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/cod.jpg" alt>
+                                    <h4>Call of Duty</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/valhalla.jpg" alt>
+                                    <h4>Assasin's Creed Valhalla</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/witcher.jpg" alt>
+                                    <h4>Witcher 3</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">144 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row">
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/csgo.jpg" alt>
+                                    <h4>CS GO</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">228 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/cod.jpg" alt>
+                                    <h4>Call of Duty</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/dota.jpg" alt>
+                                    <h4>DOTA 2</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/fortnite.jpg" alt>
+                                    <h4>Fortnite</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/valhalla.jpg" alt>
+                                    <h4>Assasin's Creed Valhalla</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/witcher.jpg" alt>
+                                    <h4>Witcher 3</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">144 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/witcher.jpg" alt>
+                                    <h4>Witcher 3</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">144 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/csgo.jpg" alt>
+                                    <h4>CS GO</h4>
+                                    <div class="line">
+                                        <div class="line-progress">
+                                            <span class="value">228 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/cod.jpg" alt>
+                                    <h4>Call of Duty</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/dota.jpg" alt>
+                                    <h4>DOTA 2</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 65%">
+                                            <span class="value">65 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/fortnite.jpg" alt>
+                                    <h4>Fortnite</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="game-card">
+                                    <img src="img/valhalla.jpg" alt>
+                                    <h4>Assasin's Creed Valhalla</h4>
+                                    <div class="line">
+                                        <div class="line-progress" style="width: 75%">
+                                            <span class="value">115 FPS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="details mt-5">
@@ -619,7 +849,7 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                                 <h4>Видеокарта</h4>
-                                <p>NVIDIA GeForce RTX 2060</p>
+                                <p>NVIDIA GeForce RTX 2060NVIDIA GeForce RTX 2060</p>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                                 <h4>Охлаждение</h4>
@@ -640,6 +870,7 @@
         </div>
     </div>
 </div>
+<div class="modal-backdrop fade show"></div>
 <script src="js/app.js"></script>
 </body>
 </html>

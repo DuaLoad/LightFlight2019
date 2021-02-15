@@ -913,6 +913,65 @@ img {
       font-weight: bold;
       font-size: 18px; }
 
+#review {
+  min-height: 100vh; }
+  #review .hero {
+    padding: 0 0 128px;
+    z-index: 2; }
+    #review .hero h2 mark {
+      display: block;
+      font-size: 32px; }
+  #review p {
+    font-size: 20px;
+    color: rgba(28, 29, 38, 0.8); }
+  #review .photo {
+    position: absolute;
+    border-radius: 50%;
+    max-width: 100%;
+    border: 25px solid #61dcff;
+    box-shadow: 0 25px 150px -25px #61dcff;
+    z-index: 1; }
+  #review .caption {
+    padding: 48px 0 80px; }
+  #review .promo {
+    padding: 280px 0 180px; }
+    #review .promo::before {
+      content: unset; }
+    #review .promo h2 {
+      line-height: 1; }
+    #review .promo img {
+      max-width: 100%; }
+  #review .hardware {
+    font-size: 20px;
+    color: rgba(28, 29, 38, 0.8);
+    margin: 25px 0 0;
+    list-style: none; }
+    #review .hardware li {
+      margin: 0;
+      padding: 10px 0; }
+      #review .hardware li + li {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    #review .hardware [class*="col"] {
+      padding: 0; }
+    #review .hardware .col {
+      margin-left: 10px; }
+  #review .gallery {
+    margin: 75px -25px 0; }
+    #review .gallery [class*="col"] {
+      padding: 10px; }
+    #review .gallery img {
+      display: block;
+      background: #1c1d26;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      object-position: center;
+      transition: .15s ease-in-out;
+      opacity: .6; }
+      #review .gallery img:hover {
+        opacity: 1;
+        cursor: pointer; }
+
 .configure::before {
   content: '';
   display: block;
@@ -1217,6 +1276,60 @@ img {
   #purchaseWindow h2 {
     font-size: 28px;
     margin: 35px 0 0; }
+  #purchaseWindow .status {
+    font-size: 18px; }
+  #purchaseWindow .performance [class*="col"] {
+    padding: 15px; }
+  #purchaseWindow .game-card {
+    position: relative;
+    border-radius: 15px;
+    background: #0e0f13;
+    padding: 135px 35px 35px;
+    height: 100%;
+    overflow: hidden; }
+    #purchaseWindow .game-card > * {
+      position: relative;
+      z-index: 2; }
+    #purchaseWindow .game-card::before {
+      content: '';
+      display: block;
+      position: absolute;
+      background: linear-gradient(0, #0e0f13 25%, transparent 115%);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1; }
+    #purchaseWindow .game-card img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      z-index: 0; }
+    #purchaseWindow .game-card h4 {
+      font-weight: bold;
+      margin-bottom: 15px; }
+    #purchaseWindow .game-card .line {
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.1); }
+    #purchaseWindow .game-card .line-progress {
+      position: relative;
+      border-radius: 25px;
+      background: #ec4f7e;
+      width: 100%;
+      height: 18px; }
+    #purchaseWindow .game-card .value {
+      position: absolute;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 16px;
+      width: 100%;
+      left: 0;
+      top: 0;
+      text-shadow: 2px 2px #000;
+      text-align: center; }
   #purchaseWindow .about {
     margin: 35px 0;
     list-style: none; }
@@ -1244,13 +1357,17 @@ img {
   #purchaseWindow .details .row {
     margin: 0 -8px; }
   #purchaseWindow .details [class*="col"] {
-    padding: 24px 8px 0; }
+    position: relative;
+    padding: 24px 8px 15px; }
     #purchaseWindow .details [class*="col"]::after {
       content: '';
       display: block;
+      position: absolute;
       background: rgba(220, 238, 255, 0.1);
+      width: calc(100% - 16px);
       height: 1px;
-      margin: 15px 0 0; }
+      left: 8px;
+      bottom: 0; }
   #purchaseWindow .details h4 {
     font-size: 16px;
     color: #fff;
@@ -1638,6 +1755,10 @@ img {
     #footer::before {
       left: 70%; } }
 @media (max-width: 992px) {
+  #review .photo {
+    position: static;
+    max-width: 320px; }
+
   #header {
     padding-bottom: 50px; }
     #header .anchor,

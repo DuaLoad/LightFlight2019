@@ -379,6 +379,86 @@
     }
   }
 }
+#review{
+  min-height:100vh;
+  .hero{
+    padding:0 0 128px;
+    z-index: 2;
+
+    h2{
+      mark{
+        display: block;
+        font-size: 32px;
+      }
+    }
+  }
+  p{
+    font-size: 20px;
+    color: transparentize($dark1, .2);
+  }
+  .photo{
+    position: absolute;
+    border-radius: 50%;
+    max-width: 100%;
+    border: 25px solid $blue;
+    box-shadow: 0 25px 150px -25px $blue;
+    z-index: 1;
+  }
+  .caption{
+    padding: 48px 0 80px;
+  }
+  .promo{
+    padding: 280px 0 180px;
+    &::before{
+      content:unset;
+    }
+    h2{
+      line-height: 1;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+  .hardware{
+    font-size: 20px;
+    color: transparentize($dark1, .2);
+    margin: 25px 0 0;
+    list-style:none;
+    li{
+      margin: 0;
+      padding: 10px 0;
+      &+li{
+        border-top: 1px solid transparentize(#000, .9)
+      }
+    }
+    [class*="col"]{
+      padding:0;
+    }
+    .col{
+      margin-left:10px;
+    }
+  }
+  .gallery{
+    margin: 75px -25px 0;
+    [class*="col"]{
+      padding: 10px;
+    }
+    img{
+      display: block;
+      background: $dark1;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      object-position: center;
+      transition: .15s ease-in-out;
+      opacity: .6;
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+}
 .configure{
   &::before{
     content:'';

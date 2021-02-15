@@ -295,6 +295,10 @@ img{
   }
 }
 @media (max-width: 992px) {
+  #review .photo{
+    position: static;
+    max-width: 320px;
+  }
   #header{
     padding-bottom:50px;
     .anchor,
