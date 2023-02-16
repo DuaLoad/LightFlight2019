@@ -277,8 +277,18 @@
 	}
 }
 
-.modal-open{
-  #app{
-    filter:blur(50px)brightness(.5);
-  }
+.modal,
+.modal-backdrop{
+	display: none!important;
+}
+
+.modal-open {
+	#app {
+		filter: blur(50px) brightness(.5);
+	}
+
+	.modal,
+	.modal-backdrop{
+		display: block!important;
+	}
 }
