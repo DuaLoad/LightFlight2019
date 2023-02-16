@@ -2,5 +2,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+*.min.min.css
+
 .idea
 nouse
