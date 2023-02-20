@@ -1,7 +1,9 @@
 .sass-cache/
-*.css.map
 *.sass.map
 *.scss.map
+
+style.css
+*.css.map
 *.min.min.css
 
 .idea
